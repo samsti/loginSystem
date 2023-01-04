@@ -1,0 +1,79 @@
+*{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+h1{
+    font-family: Trebuchet MS;
+    font-size: 5rem;
+    text-align: center;
+}
+
+h2{
+    font-family: Trebuchet MS;
+    font-weight: lighter;
+    text-align: left;
+    margin-bottom: 10px;
+    color: grey;
+
+}
+
+#main{
+    width: 20rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 50px 50px;
+}
+
+#submit{
+    float: right;
+    background-color: darkgrey;
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    border-width: 0;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+#submit:hover{
+    background-color: mediumseagreen;
+    color: white;
+}
+
+#input1{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#input2{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/*
+
+.login_form #username_error,
+.login_form #password_error{
+    margin: 0;
+    font-size: 15px;
+    color: red;
+}
+
+
+ */
