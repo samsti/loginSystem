@@ -46,7 +46,7 @@ h2{
     color: white;
 }
 
-#input1{
+#username_input{
     width: 100%;
     padding: 10px 20px;
     margin: 8px 0;
@@ -56,7 +56,7 @@ h2{
     box-sizing: border-box;
 }
 
-#input2{
+#password_input{
     width: 100%;
     padding: 10px 20px;
     margin: 8px 0;
@@ -66,14 +66,15 @@ h2{
     box-sizing: border-box;
 }
 
-/*
+
 
 .login_form #username_error,
 .login_form #password_error{
     margin: 0;
+    text-align: left;
     font-size: 15px;
-    color: red;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
 }
 
 
- */

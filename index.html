@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <title>LoginSystem</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
 <div id="wrapper">
     <div id="main">
         <h1>LOGIN</h1>
-        <form class="login_form">
-        <h2 id="username">Username</h2>
-        <input type="text" id="input1" style="display: flex; text-align: left; font-family: Trebuchet MS; font-weight: lighter;" >
-        <h2 id="password">Password</h2>
-        <input type="password" id="input2" style="display: flex; text-align: left; font-family: Trebuchet MS; font-weight: lighter;">
-        <button id="submit" role="button">Login</button>
+        <form class="login_form" method="post" name="form">
+            <h2 id="username">Username</h2>
+            <input type="text" id="username_input"
+                   style="display: flex; text-align: left; font-family: Trebuchet MS; font-weight: lighter;">
+            <h3 id="username_error">prosím vyplňte uživatelské jméno</h3>
+            <h2 id="password">Password</h2>
+            <input type="password" id="password_input"
+                   style="display: flex; text-align: left; font-family: Trebuchet MS; font-weight: lighter;">
+            <h3 id="password_error">prosím vyplňte heslo</h3>
+            <button type="submit" id="submit">Login</button>
         </form>
     </div>
 </div>
