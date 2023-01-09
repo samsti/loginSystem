@@ -17,7 +17,7 @@ form.addEventListener('submit', (e) =>{
         username.style.border = "1px solid red"
 
     }
-    if(password.value === ""){
+    if(password.value === "" || password.value.length < 6){
 
         passwordError.style.color = "red"
         password.style.border = "1px solid red"
