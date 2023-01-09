@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
+
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Welcome page</title>
 </head>
 <body>
-
+<h1>Welcome, login was successful!</h1>
+<button id="backButton">Back to login page</button>
 </body>
+<script>
+    let goBackButton = document.getElementById('backButton')
+    goBackButton.addEventListener('click', () =>{
+        location.href='index.html';
+    })
+
+</script>
 </html>

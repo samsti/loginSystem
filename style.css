@@ -41,7 +41,29 @@ h2{
     margin-top: 1rem;
 }
 
+
+
 #submit:hover{
+    background-color: mediumseagreen;
+    color: white;
+}
+
+#backButton{
+    background-color: darkgrey;
+    margin: 0;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 5px;
+    border-width: 0;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#backButton:hover{
     background-color: mediumseagreen;
     color: white;
 }
