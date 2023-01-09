@@ -9,31 +9,50 @@ let form = document.querySelectorAll('form')[0]
 form.addEventListener('submit', (e) => {
 
     e.preventDefault();
-
     if (username.value === "") {
 
         usernameError.style.color = "red"
         username.style.border = "1px solid red"
 
-    }else if (username.value !== ''){
-        usernameError.style.color = "white"
-        username.style.border = "1px solid #ccc"
     }
     if (password.value === "" || password.value.length < 6) {
 
         passwordError.style.color = "red"
         password.style.border = "1px solid red"
 
-    }else if (password.value !== '' && password.value.length >= 6) {
+    }
+})
+
+
+function usernameVerify() {
+
+
+    if (username.value !== '') {
+        usernameError.style.color = "white"
+        username.style.border = "1px solid #ccc"
+        return true;
+    }
+}
+
+function passwordVerify() {
+
+
+    if (password.value !== '' && password.value.length >= 6) {
         passwordError.style.color = "white"
         password.style.border = "1px solid #ccc"
+        return true;
     }
 
-    submitButton.addEventListener('click', () =>{
-        location.href='home.html';
-    })
+}
 
 
+submitButton.addEventListener('click', () => {
+    if (usernameVerify(true) && passwordVerify(true)) {
+        location.href = 'home.html';
+    }
 })
+
+
+
 
 
